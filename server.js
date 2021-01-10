@@ -9,7 +9,8 @@ const http = require('http').createServer(app);
 
 // Express App Config
 app.use(cookieParser())
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({limit:'5mb'}));
+app.use(bodyParser.json({limit:'5mb'}));
 app.use(session({
     secret: 'asantesanasquashbanana',
     resave: false,
@@ -30,13 +31,13 @@ if (process.env.NODE_ENV === 'production') {
     app.use(cors(corsOptions));
 }
 const boxRoutes = require('./api/box/box.routes')
-// const authRoutes = require('./api/auth/auth.routes')
-// const userRoutes = require('./api/user/user.routes')
+const authRoutes = require('./api/auth/auth.routes')
+const userRoutes = require('./api/user/user.routes')
 
 // routes
 app.use('/api/box', boxRoutes)
-// app.use('/api/auth', authRoutes)
-// app.use('/api/user', userRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/user', userRoutes)
 
 const logger = require('./services/logger.service')
 const port = process.env.PORT || 5000;
