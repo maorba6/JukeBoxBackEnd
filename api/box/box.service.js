@@ -12,9 +12,9 @@ module.exports = {
 async function query(filterBy = {}) {
     const criteria = _buildCriteria(filterBy)
     const collection = await dbService.getCollection('box')
-    console.log({collection});
     try {
         let boxes = await collection.find(criteria).toArray();
+        console.log(boxes);
         return boxes
     } catch (err) {
         throw err;

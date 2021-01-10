@@ -41,6 +41,7 @@ app.use('/api/box', boxRoutes)
 const logger = require('./services/logger.service')
 const port = process.env.PORT || 5000;
 http.listen(port, () => {
+    console.log('Server is running on port: ' + port);
     logger.info('Server is running on port: ' + port)
 });
     

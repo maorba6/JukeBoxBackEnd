@@ -5,7 +5,7 @@ module.exports = {
     getCollection
 }
 
-const dbName = 'itemDB';
+const dbName = 'boxDB';
 var dbConn = null;
 
 async function getCollection(collectionName) {
