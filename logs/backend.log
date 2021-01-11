@@ -261,6 +261,16 @@ Sun, 10 Jan 2021 11:18:11 GMT - Info - Server is running on port: 5000
 Sun, 10 Jan 2021 11:18:41 GMT - Info - Server is running on port: 5000
 Sun, 10 Jan 2021 11:19:16 GMT - Info - Server is running on port: 5000
 Sun, 10 Jan 2021 11:30:22 GMT - Info - Server is running on port: 5000
+<<<<<<< HEAD
+Sun, 10 Jan 2021 21:01:50 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 07:47:29 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 07:53:53 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 07:54:16 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 07:54:41 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 07:54:56 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 15:44:43 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 15:45:22 GMT - Info - Server is running on port: 5000
+=======
 Sun, 10 Jan 2021 12:52:48 GMT - Info - Server is running on port: 5000
 Sun, 10 Jan 2021 12:55:11 GMT - Info - Server is running on port: 5000
 Sun, 10 Jan 2021 13:00:46 GMT - Info - Server is running on port: 5000
@@ -501,8 +511,13 @@ Mon, 11 Jan 2021 10:11:35 GMT - Debug - auth.service - signup with email: sfe@gr
 Mon, 11 Jan 2021 10:13:07 GMT - Debug - auth.service - signup with email: e4te@gmao.com
 Mon, 11 Jan 2021 12:25:24 GMT - Info - Server is running on port: 5000
 Mon, 11 Jan 2021 12:25:32 GMT - Info - Server is running on port: 5000
+<<<<<<< HEAD
 Mon, 11 Jan 2021 12:53:12 GMT - Info - Server is running on port: 5000
 Mon, 11 Jan 2021 15:39:25 GMT - Info - Server is running on port: 5000
 Mon, 11 Jan 2021 15:42:24 GMT - Debug - auth.service - signup with email: GRD@fes.com
 Mon, 11 Jan 2021 15:43:19 GMT - Debug - auth.service - signup with email: adi@gmail.com
 Mon, 11 Jan 2021 15:49:48 GMT - Debug - auth.service - signup with email: efs@gdrg.com
+=======
+>>>>>>> 55917a4767d235cf02febf694c60009b9ee67cb6
+Mon, 11 Jan 2021 18:00:08 GMT - Info - Server is running on port: 5000
+>>>>>>> 6e5e169abbb21e52a392950bd3a5b0eedd544e79
