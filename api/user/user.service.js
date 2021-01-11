@@ -88,10 +88,13 @@ async function update(user) {
 
 async function add(user) {
     const collection = await dbService.getCollection('user')
+    console.log('collection add ');
     try {
         const users = await query()
+        console.log('users');
+
         const idx = users.findIndex(u => u.email === user.email)
-        console.log({ idx });
+        console.log('idx');
         if (idx !== -1) return null
         console.log('insert');
     } catch (err) {

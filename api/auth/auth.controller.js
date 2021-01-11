@@ -13,7 +13,7 @@ async function login(req, res) {
         if (user) {
             req.session.user = user;
         }
-            res.json(user)
+        res.json(user)
     } catch (err) {
         console.log('auth controller', { err });
         throw err
@@ -21,9 +21,10 @@ async function login(req, res) {
 }
 
 async function signup(req, res) {
+    const { email, password, username, imgString } = req.body
     try {
-        const { email, password, username ,imgString} = req.body
-        const user = await authService.signup(email, password, username,imgString)
+        const user = await authService.signup(email, password, username, imgString)
+        console.log({ user });
         if (user) {
             req.session.user = user;
         } else {
