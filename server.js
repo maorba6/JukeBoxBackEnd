@@ -9,7 +9,8 @@ const http = require('http').createServer(app);
 
 // Express App Config
 app.use(cookieParser())
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json({ limit: '5mb' }));
 app.use(session({
     secret: 'asantesanasquashbanana',
     resave: false,
@@ -20,7 +21,7 @@ app.use(session({
 
 
 if (process.env.NODE_ENV === 'production') {
-    console.log({__dirname});
+    console.log({ __dirname });
     app.use(express.static(path.resolve(__dirname, 'public')));
 } else {
     const corsOptions = {
@@ -30,13 +31,13 @@ if (process.env.NODE_ENV === 'production') {
     app.use(cors(corsOptions));
 }
 const boxRoutes = require('./api/box/box.routes')
-// const authRoutes = require('./api/auth/auth.routes')
-// const userRoutes = require('./api/user/user.routes')
+const authRoutes = require('./api/auth/auth.routes')
+const userRoutes = require('./api/user/user.routes')
 
 // routes
 app.use('/api/box', boxRoutes)
-// app.use('/api/auth', authRoutes)
-// app.use('/api/user', userRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/user', userRoutes)
 
 const logger = require('./services/logger.service')
 const port = process.env.PORT || 5000;
@@ -44,7 +45,7 @@ http.listen(port, () => {
     console.log('Server is running on port: ' + port);
     logger.info('Server is running on port: ' + port)
 });
-    
+
 
 // ya becha
 

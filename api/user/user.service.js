@@ -7,9 +7,6 @@ module.exports = {
     remove,
     update,
     add,
-    updatePassword,
-    confirmEmail,
-    resetPassword
 }
 
 
@@ -88,34 +85,25 @@ async function update(user) {
 }
 
 
-async function updatePassword(user) {
-    const collection = await dbService.getCollection('user')
-    const userId = user._id
-    delete user._id
-    try {
-        await collection.replaceOne({ "_id": ObjectId(userId) }, user)
-        delete user.password
-        console.log({ user });
-        return user
-    } catch (err) {
-        console.log(`ERROR: cannot update user ${user._id}`)
-        throw err;
-    }
-}
 
 async function add(user) {
     const collection = await dbService.getCollection('user')
-    const users = await query()
-    const idx = users.findIndex(u => u.email === user.email)
-    console.log({ idx });
-    if (idx !== -1) return null
-    console.log('insert');
-    user.activeMail = false
+    console.log('collection add ');
+    try {
+        const users = await query()
+        console.log('users');
+
+        const idx = users.findIndex(u => u.email === user.email)
+        console.log('idx');
+        if (idx !== -1) return null
+        console.log('insert');
+    } catch (err) {
+        console.log({ err });
+        throw err
+    }
+    user.favs = []
     user.isAdmin = false
     user.createdAt = Date.now()
-    user.favs = []
-    user.cart = []
-    user.orders = []
     try {
         await collection.insertOne(user);
         return user;
@@ -126,20 +114,3 @@ async function add(user) {
 }
 
 
-async function confirmEmail(id) {
-    const user = await getById(id)
-    if (user) {
-        user.activeMail = true
-        delete user.password
-        await update(user)
-    }
-}
-
-
-
-async function resetPassword(id) {
-    const user = await getById(id)
-    if (user) {
-        return true
-    }
-}
