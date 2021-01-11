@@ -501,3 +501,8 @@ Mon, 11 Jan 2021 10:11:35 GMT - Debug - auth.service - signup with email: sfe@gr
 Mon, 11 Jan 2021 10:13:07 GMT - Debug - auth.service - signup with email: e4te@gmao.com
 Mon, 11 Jan 2021 12:25:24 GMT - Info - Server is running on port: 5000
 Mon, 11 Jan 2021 12:25:32 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 12:53:12 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 15:39:25 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 15:42:24 GMT - Debug - auth.service - signup with email: GRD@fes.com
+Mon, 11 Jan 2021 15:43:19 GMT - Debug - auth.service - signup with email: adi@gmail.com
+Mon, 11 Jan 2021 15:49:48 GMT - Debug - auth.service - signup with email: efs@gdrg.com
