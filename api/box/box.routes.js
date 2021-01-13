@@ -1,5 +1,5 @@
 const express = require('express')
-const { deleteBox, createBox, updateBox, getBox, getBoxes} = require('./box.controller')
+const { deleteBox, createBox, updateBox, getBox, getBoxes } = require('./box.controller')
 const router = express.Router()
 
 router.get('/', getBoxes);
