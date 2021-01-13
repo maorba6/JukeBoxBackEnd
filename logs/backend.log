@@ -511,11 +511,22 @@ Mon, 11 Jan 2021 10:11:35 GMT - Debug - auth.service - signup with email: sfe@gr
 Mon, 11 Jan 2021 10:13:07 GMT - Debug - auth.service - signup with email: e4te@gmao.com
 Mon, 11 Jan 2021 12:25:24 GMT - Info - Server is running on port: 5000
 Mon, 11 Jan 2021 12:25:32 GMT - Info - Server is running on port: 5000
+<<<<<<< HEAD
+Mon, 11 Jan 2021 12:53:12 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 15:39:25 GMT - Info - Server is running on port: 5000
+Mon, 11 Jan 2021 15:42:24 GMT - Debug - auth.service - signup with email: GRD@fes.com
+Mon, 11 Jan 2021 15:43:19 GMT - Debug - auth.service - signup with email: adi@gmail.com
+Mon, 11 Jan 2021 15:49:48 GMT - Debug - auth.service - signup with email: efs@gdrg.com
+=======
 >>>>>>> 55917a4767d235cf02febf694c60009b9ee67cb6
 Mon, 11 Jan 2021 18:00:08 GMT - Info - Server is running on port: 5000
+<<<<<<< HEAD
 Mon, 11 Jan 2021 19:54:21 GMT - Info - Server is running on port: 5000
 Tue, 12 Jan 2021 09:49:06 GMT - Info - Server is running on port: 5000
 Wed, 13 Jan 2021 09:16:03 GMT - Info - Server is running on port: 5000
 Wed, 13 Jan 2021 17:39:15 GMT - Debug - auth.service - signup with email: maorba6@gmail.com
 Wed, 13 Jan 2021 17:42:55 GMT - Info - Server is running on port: 5000
 Wed, 13 Jan 2021 17:42:58 GMT - Info - Server is running on port: 5000
+=======
+>>>>>>> 6e5e169abbb21e52a392950bd3a5b0eedd544e79
+>>>>>>> 6136b1b13a35f5578873725723292ba4c85915d3
