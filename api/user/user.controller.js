@@ -31,11 +31,22 @@ async function deleteUser(req, res) {
     res.end()
 }
 
+async function updateUser(req, res) {
+    const user = req.body;
+    try {
+        await userService.update(user)
+        res.json(user)
+    } catch (err) {
+        console.log({ err });
+        throw err
+    }
+}
 
 
 module.exports = {
     getUser,
     getUsers,
     deleteUser,
+    updateUser
 
 }

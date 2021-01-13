@@ -520,7 +520,16 @@ Mon, 11 Jan 2021 15:49:48 GMT - Debug - auth.service - signup with email: efs@gd
 =======
 >>>>>>> 55917a4767d235cf02febf694c60009b9ee67cb6
 Mon, 11 Jan 2021 18:00:08 GMT - Info - Server is running on port: 5000
+<<<<<<< HEAD
+Mon, 11 Jan 2021 19:54:21 GMT - Info - Server is running on port: 5000
+Tue, 12 Jan 2021 09:49:06 GMT - Info - Server is running on port: 5000
+Wed, 13 Jan 2021 09:16:03 GMT - Info - Server is running on port: 5000
+Wed, 13 Jan 2021 17:39:15 GMT - Debug - auth.service - signup with email: maorba6@gmail.com
+Wed, 13 Jan 2021 17:42:55 GMT - Info - Server is running on port: 5000
+Wed, 13 Jan 2021 17:42:58 GMT - Info - Server is running on port: 5000
+=======
 >>>>>>> 6e5e169abbb21e52a392950bd3a5b0eedd544e79
+<<<<<<< HEAD
 Mon, 11 Jan 2021 19:50:17 GMT - Info - Server is running on port: 5000
 Tue, 12 Jan 2021 08:04:58 GMT - Info - Server is running on port: 5000
 Tue, 12 Jan 2021 14:41:38 GMT - Info - Server is running on port: 5000
@@ -554,3 +563,12 @@ Wed, 13 Jan 2021 15:30:38 GMT - Info - Server is running on port: 5000
 Wed, 13 Jan 2021 16:03:10 GMT - Info - Server is running on port: 5000
 Wed, 13 Jan 2021 16:57:50 GMT - Info - Server is running on port: 5000
 Wed, 13 Jan 2021 17:48:24 GMT - Debug - auth.service - signup with email: thtft@gmail.com
+=======
+>>>>>>> 6136b1b13a35f5578873725723292ba4c85915d3
+>>>>>>> 3112999b9c7ef8ffc3f697e80c422529fe38563d
+Wed, 13 Jan 2021 18:54:23 GMT - Info - Server is running on port: 5000
+Wed, 13 Jan 2021 18:55:49 GMT - Debug - auth.service - signup with email: adiggg@gmail.com
+Wed, 13 Jan 2021 18:59:10 GMT - Info - Server is running on port: 5000
+Wed, 13 Jan 2021 18:59:21 GMT - Info - Server is running on port: 5000
+Wed, 13 Jan 2021 18:59:29 GMT - Info - Server is running on port: 5000
+Wed, 13 Jan 2021 18:59:31 GMT - Info - Server is running on port: 5000
