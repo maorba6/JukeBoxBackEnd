@@ -14,7 +14,6 @@ async function query(filterBy = {}) {
     const collection = await dbService.getCollection('box')
     try {
         let boxes = await collection.find(criteria).toArray();
-        console.log(boxes);
         return boxes
     } catch (err) {
         throw err;
@@ -23,7 +22,14 @@ async function query(filterBy = {}) {
 
 function _buildCriteria(filterBy) {
     let criteria = {}
-    
+    console.log({filterBy});
+    if (filterBy.genre) {
+        criteria.genre = filterBy.genre
+    }
+    if (filterBy.name) {
+        const filterName = new RegExp(filterBy.name, 'i');
+        criteria.name = { $regex: filterName }
+    }
     return criteria;
 }
 

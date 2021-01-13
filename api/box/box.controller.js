@@ -9,6 +9,7 @@ async function getBox(req, res) {
 
 async function getBoxes(req, res) {
     try {
+        console.log(req.query, 'query');
         const boxes = await boxService.query(req.query)
         res.send(boxes)
     } catch (err) {
@@ -40,13 +41,13 @@ async function updateBox(req, res) {
 
 async function createBox(req, res) {
     const box = req.body;
+    console.log({ box });
     try {
         await boxService.add(box)
         res.json(box)
     } catch (err) {
         console.log({ err });
         throw err
-
     }
 }
 
