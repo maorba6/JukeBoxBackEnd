@@ -33,8 +33,10 @@ async function deleteUser(req, res) {
 
 async function updateUser(req, res) {
     const user = req.body;
+    req.session.user = user;
     try {
         await userService.update(user)
+
         res.json(user)
     } catch (err) {
         console.log({ err });

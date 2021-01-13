@@ -6,7 +6,7 @@ const router = express.Router()
 
 router.get('/', getUser)
 router.delete('/:id', requireAuth, requireAdmin, deleteUser)
-router.put('/:id', updateUser, requireAuth);
+router.put('/:id', requireAuth, updateUser);
 
 
 module.exports = router
