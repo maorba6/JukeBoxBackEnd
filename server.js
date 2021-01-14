@@ -6,6 +6,15 @@ const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const app = express()
 const http = require('http').createServer(app);
+const io = require("socket.io")(http, {
+    cors: {
+        origin: "http://localhost:3000",
+        methods: ["GET", "POST"]
+    }
+})
+
+
+module.exports.io = io
 // Express App Config
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -32,11 +41,13 @@ if (process.env.NODE_ENV === 'production') {
 const boxRoutes = require('./api/box/box.routes')
 const authRoutes = require('./api/auth/auth.routes')
 const userRoutes = require('./api/user/user.routes')
+const socketRoutes = require('./api/socket/socket.routes')
 
 // routes
 app.use('/api/box', boxRoutes)
 app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
+app.use('/api/socket', socketRoutes)
 
 const logger = require('./services/logger.service')
 const port = process.env.PORT || 5000;
