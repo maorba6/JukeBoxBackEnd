@@ -6,7 +6,6 @@ const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const app = express()
 const http = require('http').createServer(app);
-
 // Express App Config
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: true }));
