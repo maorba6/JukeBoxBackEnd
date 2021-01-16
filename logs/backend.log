@@ -572,5 +572,15 @@ Wed, 13 Jan 2021 18:59:10 GMT - Info - Server is running on port: 5000
 Wed, 13 Jan 2021 18:59:21 GMT - Info - Server is running on port: 5000
 Wed, 13 Jan 2021 18:59:29 GMT - Info - Server is running on port: 5000
 Wed, 13 Jan 2021 18:59:31 GMT - Info - Server is running on port: 5000
+<<<<<<< HEAD
+Wed, 13 Jan 2021 20:31:58 GMT - Info - Server is running on port: 5000
+Wed, 13 Jan 2021 20:40:19 GMT - Info - Server is running on port: 5000
+Wed, 13 Jan 2021 20:48:00 GMT - Debug - auth.service - signup with email: grdgrd@fgg.com
+Wed, 13 Jan 2021 21:07:41 GMT - Info - Server is running on port: 5000
+=======
 Wed, 13 Jan 2021 19:03:32 GMT - Info - Server is running on port: 5000
+<<<<<<< HEAD
 Sat, 16 Jan 2021 19:35:00 GMT - Info - Server is running on port: 5000
+=======
+>>>>>>> a0ca01d6eb2607324765a731207390244ed41eb3
+>>>>>>> 8ab525d022491e5c61fc55ea67c1274156079481
