@@ -12,7 +12,7 @@ const io = require("socket.io")(http, {
         methods: ["GET", "POST"]
     }
 })
-
+console.log({io});
 
 module.exports.io = io
 // Express App Config
