@@ -6,17 +6,30 @@ const router = express.Router()
 
 io.on('connection',(socket)=>{
     console.log('connected ',socket.id);
+
+    socket.emit('get box id')
+    socket.on('box id',(boxId)=>{
+        socket.join(boxId)
+        io.to(boxId).emit('user joined')
+    })
+
+
+
     socket.on('sendMsg',async (data) =>{
         box = data.currBox
         box.chat.push(data.message)
         await boxService.update(box)
         io.emit('msgSent')
     })
+
+
+
+
+
     socket.on('typing',(box, user)=>{
         
     })
 })
-
 
 
 
