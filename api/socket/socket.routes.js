@@ -11,19 +11,17 @@ io.on('connection',(socket)=>{
     socket.on('got data', data =>{
         socket.join(data.id)
         io.to(data.id).emit('user joined',data.user.username)
-
-        socket.on('sendMsg',async (data) =>{
-            box = data.currBox
-            box.chat.push(data.message)
-            await boxService.update(box)
-            io.to(box.id).emit('msgSent')
-        })
-
         socket.on('typing',(box, user)=>{
             io.to(box._id,).emit('user is typing',user)
         })
     })
-
+    socket.on('sendMsg',async (data) =>{
+        box = data.currBox
+        // box.chat.push(data.message)
+        // await boxService.update(box)
+        io.to(box._id).emit('msgSent',box)
+    })
+    
 })
 
 
